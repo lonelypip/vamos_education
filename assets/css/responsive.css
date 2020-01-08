@@ -38,6 +38,15 @@ Author URI: http://www.bootstrapthemes.co
 
 }
 
+
+@media (max-width: 991px) and (min-width: 769px) {
+    .navbar-nav {
+        position: absolute !important; 
+        right: 0;
+    }
+}
+
+
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
     html {
@@ -96,9 +105,12 @@ Author URI: http://www.bootstrapthemes.co
     button.btn-md{
         font-size:0.675rem;
     }
-
-
+    .home .owl-theme .owl-nav {
+         margin-top: 0px; 
+    }
 }
+
+
 /* Landscape phones and portrait tablets */
 @media  (max-width: 768px) {
     html {
@@ -218,11 +230,10 @@ Author URI: http://www.bootstrapthemes.co
     .copyright_text{
         text-align: center;
     }
-
-
 }
 
-@media (max-width: 548px) {
+
+@media (max-width: 563px) {
     .home .owl-theme .owl-nav {
         margin-top: 0px;
     }
@@ -244,7 +255,12 @@ Author URI: http://www.bootstrapthemes.co
     .home .owl-theme .owl-nav {
         margin-top: 80px;
     }
+}
 
+@media (max-width: 466px) {
+    .home .owl-theme .owl-nav {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 452px) {
@@ -254,7 +270,11 @@ Author URI: http://www.bootstrapthemes.co
 }
 
 
-
+@media (max-width: 349px) {
+    .home .owl-theme .owl-nav {
+        margin-top: -50px;
+    }
+}
 
 @media (max-width: 320px) {
 
@@ -265,15 +285,5 @@ Author URI: http://www.bootstrapthemes.co
     .about_skill_area .about_tabe .about_tabe_menu li a {
         width: 60px;
     }
-
-
-
-
-
-
-
-
-
-
 }
 
