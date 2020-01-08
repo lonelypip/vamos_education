@@ -222,6 +222,12 @@ Author URI: http://www.bootstrapthemes.co
 
 }
 
+@media (max-width: 548px) {
+    .home .owl-theme .owl-nav {
+        margin-top: 0px;
+    }
+}
+
 
 
 /* Landscape phones and smaller */
@@ -233,12 +239,19 @@ Author URI: http://www.bootstrapthemes.co
         padding: 10px 10px 10px 0px;
     }
     .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 75px;
+        width: 75px;    
     }
-
+    .home .owl-theme .owl-nav {
+        margin-top: 80px;
+    }
 
 }
 
+@media (max-width: 452px) {
+    .home .owl-theme .owl-nav {
+        margin-top: 0px;
+    }
+}
 
 
 
