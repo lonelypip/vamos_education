@@ -46,22 +46,6 @@ Author URI: http://www.bootstrapthemes.co
 	 }
 }
 
-@media (max-width: 769px) {
-	.service_tabe_menu {
-		display: flex !important;
-		justify-content: space-between !important;
-	 }
-
-	 .service_tabe_menu li {
-		 width: 23% !important;
-		 float: none !important;
-	 }
-
-	 .service_tabe_menu li a {
-		 width: 100% !important;
-		 margin: 0 !important;
-	 }
-}
 
 
 /* Portrait tablets and small desktops */
@@ -129,6 +113,30 @@ Author URI: http://www.bootstrapthemes.co
 
 
 /* Landscape phones and portrait tablets */
+
+
+@media (max-width: 769px) {
+    .service_tabe_menu {
+        display: flex !important;
+        justify-content: space-between !important;
+     }
+
+     .service_tabe_menu li {
+         width: 23% !important;
+         float: none !important;
+     }
+
+     .service_tabe_menu li a {
+         width: 100% !important;
+         margin: 0 !important;
+         background-size: cover !important;
+         height: 150px !important;
+     }
+     .service .tab-content {
+        margin-top: 65px;
+    }
+}
+
 @media  (max-width: 768px) {
     html {
         font-size: 80%;
@@ -254,6 +262,19 @@ Author URI: http://www.bootstrapthemes.co
     .home .owl-theme .owl-nav {
         margin-top: 0px;
     }
+    .service_tabe ul li a i {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500) {
+    .service_tabe ul li a i {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .service_tabe_menu li a {
+        height: 120px !important;
+    }
 }
 
 
@@ -287,9 +308,31 @@ Author URI: http://www.bootstrapthemes.co
 }
 
 
+@media (max-width: 380px){
+    .service_tabe_menu li a {
+        height: 103px !important;
+    }
+    .service .tab-content {
+        margin-top: 35px;
+    }
+    .service_tabe ul li a i {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 349px) {
     .home .owl-theme .owl-nav {
         margin-top: -50px;
+    }
+}
+
+@media (max-width: 340px) {
+    .service .nav-tabs>li>a {
+        font-size: 87%;
+    }
+    .service_tabe_menu li a {
+        height: 90px !important;
     }
 }
 
