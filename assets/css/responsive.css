@@ -135,6 +135,9 @@ Author URI: http://www.bootstrapthemes.co
      .service .tab-content {
         margin-top: 65px;
     }
+    .single_tab_img{
+        padding-top: 40px;
+    }
 }
 
 @media  (max-width: 768px) {
