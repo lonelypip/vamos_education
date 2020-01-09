@@ -43,7 +43,24 @@ Author URI: http://www.bootstrapthemes.co
     .navbar-nav {
         position: absolute !important; 
         right: 0;
-    }
+	 }
+}
+
+@media (max-width: 769px) {
+	.service_tabe_menu {
+		display: flex !important;
+		justify-content: space-between !important;
+	 }
+
+	 .service_tabe_menu li {
+		 width: 23% !important;
+		 float: none !important;
+	 }
+
+	 .service_tabe_menu li a {
+		 width: 100% !important;
+		 margin: 0 !important;
+	 }
 }
 
 
@@ -231,41 +248,6 @@ Author URI: http://www.bootstrapthemes.co
         text-align: center;
     }
 }
-
-
-@media (max-width: 764px) {
-    .nav-tabs {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .nav-tabs>li {
-        width: 24%;
-    }
-    .service .tab-content {
-        margin-top: 50px;
-    }
-    .head_title {
-        margin-bottom: 30px;
-    }
-    .service .nav-tabs>li>a {
-        margin-left: 0px; 
-    }
-    .service .nav-tabs>li>a {
-        width: 100%;
-    }
-    .service_tabe_menu.nav-tabs>li.active>a:hover,
-    .nav-tabs>li.active>a:focus {
-        width: 100%;
-    }
-}
-
-@media (max-width: 705px) {
-    .nav-tabs>li {
-        width: 24%;
-    }
-}
-
 
 
 @media (max-width: 563px) {
