@@ -233,34 +233,46 @@ jQuery(document).ready(function ($) {
 
 
 
+// function myFunction() {
+//     var x = document.getElementById("formid");
+//     var name = x.elements[0].value
+//     var surname = x.elements[1].value
+//     var email = x.elements[2].value
+//     var message = x.elements[3].value
+//     console.log(name,surname,email,message)
+// }
+
+const URL = 'https://api.telegram.org/bot1063170033:AAFUyG_hJ-bvUeu0mM89jQDJ-DCY5BP1lI4/sendMessage'
 
 
-//  function sendMessage() {
-//     $.ajax({
-//       type: “POST”,
-//       url: “https://mandrillapp.com/api/1.0/messages/send.json”,
-//       data: {
-//         ‘key’: ‘b9db19845073ef08304d284b84286a19-us4’,
-//         ‘message’: {
-//           ‘from_email’: ‘darik_11.98@mail.ru’,
-//           ‘to’: [
-//               {
-//                 ‘email’: ‘darik_11.98@mail.ru’,
-//                 ‘name’: ‘Daryn’,
-//                 ‘type’: ‘to’
-//               },
-//             ],
-//           ‘autotext’: ‘true’,
-//           ‘subject’: ‘YOUR SUBJECT HERE!’,
-//           ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
-//         }
-//       }
-//      }).done(function(response) {
-//        console.log(response); // if you're into that sorta thing
-//      });
-//  }  
+$('#formid').click(function() {
+    const x = document.getElementById("formid");
+    const name = x.elements[0].value
+    const surname = x.elements[1].value
+    const email = x.elements[2].value
+    const phone = x.elements[3].value
+    const message = x.elements[4].value
+    const kek = '<pre><strong>Заявление</strong>\nИмя: ' + name + '\n' + 'Фамилия: ' + surname + '\n' + 'Email: ' + email + '\n' + 'Phone: ' + phone + '\n' + 'Comment: ' + message +'</pre>'
+    const data = {
+        chat_id: 501191284,
+        parse_mode: 'HTML',
+        text: kek,
+    }
+    $.post(URL, data, function(data, status){
+        console.log(status)
+    })
+})
 
 
-//  $('#sendMessage').click(sendMessage) {
-  
-// };
+const matchNumber = (event) => {
+   const reg = /\D*/g;
+
+   if (event.target.value.search(reg) !== -1) {
+        event.target.value = event.target.value.replace(reg, '');
+    }
+};
+
+
+const imputnumberfield = document.getElementById("number_field")
+imputnumberfield.addEventListener('input', matchNumber)
+
