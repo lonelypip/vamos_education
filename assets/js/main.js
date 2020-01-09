@@ -235,32 +235,32 @@ jQuery(document).ready(function ($) {
 
 
 
- function sendMessage() {
-    $.ajax({
-      type: “POST”,
-      url: “https://mandrillapp.com/api/1.0/messages/send.json”,
-      data: {
-        ‘key’: ‘b9db19845073ef08304d284b84286a19-us4’,
-        ‘message’: {
-          ‘from_email’: ‘darik_11.98@mail.ru’,
-          ‘to’: [
-              {
-                ‘email’: ‘darik_11.98@mail.ru’,
-                ‘name’: ‘Daryn’,
-                ‘type’: ‘to’
-              },
-            ],
-          ‘autotext’: ‘true’,
-          ‘subject’: ‘YOUR SUBJECT HERE!’,
-          ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
-        }
-      }
-     }).done(function(response) {
-       console.log(response); // if you're into that sorta thing
-     });
- }  
+//  function sendMessage() {
+//     $.ajax({
+//       type: “POST”,
+//       url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+//       data: {
+//         ‘key’: ‘b9db19845073ef08304d284b84286a19-us4’,
+//         ‘message’: {
+//           ‘from_email’: ‘darik_11.98@mail.ru’,
+//           ‘to’: [
+//               {
+//                 ‘email’: ‘darik_11.98@mail.ru’,
+//                 ‘name’: ‘Daryn’,
+//                 ‘type’: ‘to’
+//               },
+//             ],
+//           ‘autotext’: ‘true’,
+//           ‘subject’: ‘YOUR SUBJECT HERE!’,
+//           ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+//         }
+//       }
+//      }).done(function(response) {
+//        console.log(response); // if you're into that sorta thing
+//      });
+//  }  
 
 
- $('#sendMessage').click(sendMessage) {
+//  $('#sendMessage').click(sendMessage) {
   
-};
+// };
