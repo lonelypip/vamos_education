@@ -637,7 +637,9 @@ input::-ms-input-placeholder {
 .head_title p{
     font-family: 'playfair_displayregular';
 }
-
+.head_title_2_section {
+    margin-bottom: 0;
+}
 /*home section*/
 .home{
     background: url(../images/test.jpeg) no-repeat 100% 100%;
@@ -957,6 +959,9 @@ input::-ms-input-placeholder {
 
 
 /*others service section css*/
+#othersservice .sections{
+    padding-bottom: 0;
+}
 .othersservice{
     background: #ffffff;
 }
@@ -991,6 +996,11 @@ input::-ms-input-placeholder {
 
 
 /* Team section css */
+
+#team .sections {
+    padding-top: 55px;
+}
+
 .team{
     color:#fff;
 }
