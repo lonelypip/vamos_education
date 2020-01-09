@@ -280,9 +280,13 @@ function sendMessage(event, form) {
 		},
 	}
 
-	fetch(URL, config)
-		.then(res => console.log(res))
-		.catch(err => console.log(err))
+	if ((formDataObj.name && formDataObj.surname && formDataObj.email + formDataObj.phone && formDataObj.message).length !== 0) {
+		fetch(URL, config)
+			.then(res => console.log(res))
+			.catch(err => console.log(err))
+	} else {
+		console.log('Заполните все поля!')
+	}
 }
 
 form.addEventListener('submit', event => sendMessage(event, form));
