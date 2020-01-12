@@ -1365,8 +1365,16 @@ button.btn-md:hover {
     background: #eeeeee;
 }
 
+.cooperation_logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
 
-
+.cooperation_logos > div {
+    margin-bottom: 30px
+}
 
 
 
