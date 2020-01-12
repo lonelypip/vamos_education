@@ -267,7 +267,7 @@ function sendMessage(event, form) {
 	const kek = '<pre><strong>Заявление</strong>\nИмя: ' + formDataObj.name + '\n' + 'Фамилия: ' + formDataObj.surname + '\n' + 'Email: ' + formDataObj.email + '\n' + 'Phone: ' + formDataObj.phone + '\n' + 'Comment: ' + formDataObj.message + '</pre>'
 
 	const data = {
-		chat_id: 501191284,
+		chat_id: 146168463,,
 		parse_mode: 'HTML',
 		text: kek,
 	}
